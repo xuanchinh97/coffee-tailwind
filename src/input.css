@@ -20,3 +20,15 @@
 .ct-top-menu-expanded {
   @apply absolute top-20 z-10  w-full text-center bg-slate-200 animate-slideDown;
 }
+
+.ct-subHeadLine {
+  @apply flex justify-center items-center mb-24;
+}
+
+.ct-subHeadLine-line {
+  @apply w-8 h-px bg-gray-400;
+}
+
+.ct-subHeadLine-label {
+  @apply uppercase mx-4 tracking-widest text-sm;
+}
