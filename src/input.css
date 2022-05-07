@@ -5,7 +5,7 @@
 @tailwind utilities;
 /* ct = custom  */
 .ct-top-menu-item {
-  @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-light-coffee
+  @apply cursor-pointer py-3 lg:py-1 text-white lg:text-black hover:text-slate-500 relative after:absolute after:bottom-0 after:left-0 after:bg-light-coffee
                         after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .ct-top-menu-expanded {
-  @apply absolute top-20 z-10  w-full text-center bg-slate-200 animate-slideDown;
+  @apply absolute top-20 z-10 p-5 text-center bg-emerald-800 animate-slideDown w-[100vw]  left-[calc(-50vw+50%)];
 }
 
 .ct-subHeadLine {

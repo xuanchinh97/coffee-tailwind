@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/logo.jpg" type="image/gif" sizes="16x16">
-    <title>Coffee TailwindCSS</title>
-    <link rel="stylesheet" type="text/css" href="./output.css">
-    <script src="./main.js" async></script>
+    <link rel="icon" href="./public/img/logo.jpg" type="image/gif" sizes="16x16">
+    <title>Coffee Tailwind</title>
+    <!-- css  -->
+    <link rel="stylesheet" type="text/css" href="../public/output.css">
+    <!-- js  -->
+    <script src="./public/main.js" async></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- animation lib  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="root">
-        <div class="content-wrapper font-Karla max-w-screen-2xl text-bas mx-auto px-8 bg-slate-200">
+        <div class="content-wrapper font-Karla max-w-screen-2xl text-bas mx-auto px-8">
 
-            <header class="py-6 mx-10 uppercase relative">
+            <header class="py-6 lg:mx-10 uppercase relative">
                 <nav class="flex flex-row justify-between items-center">
                     <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
-                        Coffee
+                        Coffee Tailwind
                     </div>
                     <ul id="top-menu"
                         class=" basis-3/6 hidden lg:flex items-center justify-around text-sm text-gray-500 font-medium">
-                        <li class="ct-top-menu-item"><a href="" class="">Home</a></li>
-                        <li class="ct-top-menu-item"><a href="" class="">Products</a></li>
-                        <li class="ct-top-menu-item"><a href="" class="">Blog</a></li>
-                        <li class="ct-top-menu-item"><a href="" class="">About</a></li>
-                        <li class="ct-top-menu-item"><a href="" class="">Contact</a></li>
-                        <li class="ct-top-menu-item"><a href="" class="">Styleguide</a></li>
+                        <li class="ct-top-menu-item"><a href="#" class="">Home</a></li>
+                        <li class="ct-top-menu-item"><a href="#" class="">Products</a></li>
+                        <li class="ct-top-menu-item"><a href="#" class="">Blog</a></li>
+                        <li class="ct-top-menu-item"><a href="#" class="">About</a></li>
+                        <li class="ct-top-menu-item"><a href="#" class="">Contact</a></li>
+                        <li class="ct-top-menu-item"><a href="#" class="">Styleguide</a></li>
                     </ul>
 
                     <ul
                         class="basis-2/6 sm:flex-1 sm:justify-end mr-4  lg:justify-center lg:basis-1/6 flex justify-start items-center uppercase text-sm  text-gray-500 font-medium">
-                        <li class="ct-top-menu-item">
-                            <a href="" class="flex items-center">
+                        <li class="text-black hover:text-opacity-80">
+                            <a href="#" class="flex items-center">
                                 <svg xmlns="http://ww.w3.org/2000/svg" class="ct-icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                                 </svg>
                                 <span class="mx-2">Cart</span>
-                                <span class="ct-badge-circle bg-orange-400" text-white>10</span>
+                                <span class="ct-badge-circle bg-orange-400 text-white">97</span>
                             </a>
                         </li>
                     </ul>
@@ -55,7 +60,8 @@
             </header>
 
             <main>
-                <div class="slider h-[530px] bg-[url('./img/product/header-slide.jpg')] ">
+                <div class="slider h-[530px] bg-[url('./img/product/photo(15).jpg')] bg-bottom"
+                    style="background-position: bottom;">
                     <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30">
                         <div class=" mx-16 text-white text-center">
                             <div class="uppercase text-sm mb-6">BEST PLACE TO BUY DESIGN</div>
@@ -70,7 +76,7 @@
                 </div>
                 <!--end slider-->
 
-                <div class="story">
+                <div class="story" data-aos="fade-up" data-aos-duration="2000">
                     <div class="w-full h-full flex justify-center items-center">
                         <div class=" py-32 px-10 lg:px-56 text-center">
                             <div class="text-3xl leading-10">Even the all-powerful Pointing has no control about the
@@ -81,7 +87,7 @@
                                 almost unorthographic life One day however a small line of blind text by the name of
                                 Lorem Ipsum decided to leave for the far World of Grammar.</div>
                             <div class="">
-                                <a href="" class="ct-top-menu-item text-pink-300 hover:text-pink-400">Read the full
+                                <a href="#" class="ct-top-menu-item text-orange-300 hover:text-orange-400">Read the full
                                     Story </a>
                             </div>
                         </div>
@@ -97,10 +103,10 @@
                 </div>
                 <div class="featured-mugs w-[95%] lg:w-[65%] mx-auto mb-24">
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-4">
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[400px] sm:h-[540px] bg-[url('./img/product/photo(1).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -110,7 +116,7 @@
                                 </a>
                             </div>
                             <div class="text-center mt-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Pink Premium Ceramic</div>
                                 </a>
                                 <div class="">
@@ -118,10 +124,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[400px] sm:h-[540px] bg-[url('./img/product/photo(2).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -134,7 +140,7 @@
                                 </a>
                             </div>
                             <div class="text-center mt-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Golden Designers Mug</div>
                                 </a>
                                 <div class="">
@@ -155,10 +161,10 @@
                 <div class="more-products w-[95%] lg:w-[65%] mx-auto mb-24">
                     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-8 lg:grid-cols-3 m ">
                         <!-- product 2  -->
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[380px] bg-[url('./img/product/photo(3).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -168,7 +174,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Red Love Cup</div>
                                 </a>
                                 <div class="">
@@ -176,10 +182,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[380px] bg-[url('./img/product/photo(4).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -192,7 +198,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Black Tea Cup</div>
                                 </a>
                                 <div class="">
@@ -202,10 +208,10 @@
                             </div>
                         </div>
                         <!-- product 4 -->
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[380px] bg-[url('./img/product/photo(5).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -215,7 +221,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">B&W Essentials Mug</div>
                                 </a>
                                 <div class="">
@@ -223,10 +229,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[380px] bg-[url('./img/product/photo(6).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -239,7 +245,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Winter Style Mug</div>
                                 </a>
                                 <div class="">
@@ -249,10 +255,10 @@
                             </div>
                         </div>
                         <!-- product 6 -->
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[380px] bg-[url('./img/product/photo(7).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -262,7 +268,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Espresso Cup by Mugs.co</div>
                                 </a>
                                 <div class="">
@@ -270,10 +276,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[380px] bg-[url('./img/product/photo(8).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -286,7 +292,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl mb-3 hover:text-orange-400">Pink Premium Ceramic</div>
                                 </a>
                                 <div class="">
@@ -308,7 +314,8 @@
                 <div class="coffe-magazine w-[95%] lg:w-[65%] mx-auto mb-24">
                     <div class="flex flex-col md:flex-row justify-center items-center gap-5 ">
                         <!-- left -->
-                        <div class="basis-1/2 flex flex-row gap-5 h-full w-full mb-8 md:md-0">
+                        <div data-aos="fade-up" data-aos-duration="2000"
+                            class="basis-1/2 flex flex-row gap-5 h-full w-full mb-8 md:md-0">
                             <div
                                 class="h-[280px] basis-2/3 bg-[url('./img/product/photo(9).jpg')] bg-cover bg-no-repeat bg-center">
                             </div>
@@ -322,7 +329,7 @@
                             </div>
                         </div>
                         <!-- right  -->
-                        <div class="basis-1/2 pl-8 xl:pl-14">
+                        <div data-aos="fade-up" data-aos-duration="2000" class="basis-1/2 pl-8 xl:pl-14">
                             <div class="uppercase tracking-widest text-gray-500 font-medium text-xs mb-4">PREMIUM OFFER
                             </div>
                             <div class="text-4xl mb-4">Get our Coffee Magazie</div>
@@ -349,10 +356,10 @@
                 </div>
                 <div class="lifestyle-stories w-[95%] lg:w-[65%] mx-auto mb-24">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4">
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[300px] bg-[url('./img/product/photo(13).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -362,7 +369,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl  mb-3 hover:text-orange-400 ">How long does a cup of coffee keep
                                         you awake?</div>
                                 </a>
@@ -372,13 +379,13 @@
                                 </div>
                                 <div
                                     class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest">
-                                    OCTOBER 9, 2022</div>
+                                    MAY 5, 2022</div>
                             </div>
                         </div>
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[300px] bg-[url('./img/product/photo(14).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -388,7 +395,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl  mb-3 hover:text-orange-400 ">How long does a cup of coffee keep
                                         you awake?</div>
                                 </a>
@@ -398,13 +405,13 @@
                                 </div>
                                 <div
                                     class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest">
-                                    OCTOBER 9, 2022</div>
+                                    MAY 5, 2022</div>
                             </div>
                         </div>
-                        <div class="ct-product-card">
+                        <div class="ct-product-card" data-aos="fade-up" data-aos-duration="2000">
                             <div
                                 class="h-[300px] bg-[url('./img/product/photo(15).jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="">
+                                <a href="#">
                                     <div
                                         class="w-full h-full hover:bg-gray-400 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300  relative group">
                                         <div
@@ -414,7 +421,7 @@
                                 </a>
                             </div>
                             <div class="text-center my-8">
-                                <a href="" class="">
+                                <a href="#" class="">
                                     <div class="text-xl  mb-3 hover:text-orange-400 ">How long does a cup of coffee keep
                                         you awake?</div>
                                 </a>
@@ -424,7 +431,7 @@
                                 </div>
                                 <div
                                     class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest">
-                                    OCTOBER 9, 2022</div>
+                                    MAY 5, 2022</div>
                             </div>
                         </div>
 
@@ -432,7 +439,8 @@
                 </div>
                 <!--end lifestyle-stories-->
 
-                <div class="subcribe-us h-[350px] bg-emerald-800 felx flex-col justify-center items-center text-center">
+                <div data-aos="fade-up" data-aos-duration="2000"
+                    class="subcribe-us h-[350px] bg-emerald-800 felx flex-col justify-center items-center text-center">
                     <div class="flex justify-center items-center pt-10">
                         <div class="ct-subHeadLine-line "></div>
                         <div class="ct-subHeadLine-label text-white">Sign up adn get free coffee bags
@@ -444,7 +452,7 @@
                         <input type="email"
                             class="px-6 py-4 bg-inherit border-[1px] lg:w-[350px]  border-gray-700  outline-none text-white leading-5 hover:border-gray-300 duration-500 w-full "
                             placeholder="customer@xuanchinh97.dev">
-                        <button class="bg-white text-gray-900 lg:w-max p-4 w-full">Subsribe</button>
+                        <button class="bg-white text-gray-900 lg:w-max p-4 w-full">Subscribe</button>
                     </div>
                 </div>
                 <!--end subcribe-us-->
@@ -454,7 +462,7 @@
                 <div class="flex gap-8 text-gray-400 text-sm flex-col md:flex-row text-center md:text-left">
                     <div class="basis-1/3">
                         <div class="font-bold text-xl mb-4 text-gray-800">Coffee Tailwind</div>
-                        <div class="mb-8 md:mb-20">Delivering the best coffee life since 1996. From coffee geeks to the
+                        <div class="mb-8 md:mb-20">Delivering the best coffee life since 1997. From coffee geeks to the
                             real ones.
                         </div>
                         <div class="text-gray-400 hover:text-orange-400">CoffeeTailwind Inc. © 1997</div>
@@ -462,26 +470,30 @@
                     <div class="basis-1/6">
                         <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Menu</div>
                         <div class="flex flex-col gap-2">
-                            <div class=""><a href="" class="hover:text-orange-400">Home</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">Our Products</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">About</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">Contact</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">Styleguide</a></div>
+                            <div class=""><a href="#" class="hover:text-orange-400">Home</a></div>
+                            <div class=""><a href="#" class="hover:text-orange-400">Our Products</a></div>
+                            <div class=""><a href="#" class="hover:text-orange-400">About</a></div>
+                            <div class=""><a href="#" class="hover:text-orange-400">Contact</a></div>
+                            <div class=""><a href="#" class="hover:text-orange-400">Styleguide</a></div>
                         </div>
                     </div>
                     <div class="basis-1/6">
                         <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Fllow Us</div>
                         <div class="flex flex-col gap-2">
-                            <div class=""><a href="" class="hover:text-orange-400">Facebook</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">Instagram</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">Pinterest</a></div>
-                            <div class=""><a href="" class="hover:text-orange-400">Twitter</a></div>
+                            <div class=""><a href="https://www.facebook.com/chih.97" target="blank"
+                                    class="hover:text-orange-400">Facebook</a></div>
+                            <div class=""><a href="https://www.instagram.com/txcka35/" target="blank"
+                                    class="hover:text-orange-400">Instagram</a></div>
+                            <div class=""><a href="https://www.pinterest.com/chinhdz97/" target="blank"
+                                    class="hover:text-orange-400">Pinterest</a></div>
+                            <div class=""><a href="https://twitter.com/xuanchinh97" target="blank"
+                                    class="hover:text-orange-400">Twitter</a></div>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Contact Us</div>
                         <div class="">We’re Always Happy to Help</div>
-                        <div class="text-bold text-lg text-gray-800">us@xuanchinh97.dev</div>
+                        <div class="text-bold text-base text-gray-800">us@xuanchinh97.dev</div>
                         <div class="text-orange-400 text-opacity-90">power by 97</div>
                     </div>
                 </div>
