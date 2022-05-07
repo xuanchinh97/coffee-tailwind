@@ -532,14 +532,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mr-4{
@@ -572,10 +572,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .flex{
@@ -709,10 +705,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
-.items-end{
-  align-items: flex-end;
-}
-
 .items-center{
   align-items: center;
 }
@@ -758,11 +750,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
-.bg-slate-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
 .bg-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
@@ -791,8 +778,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.3;
 }
 
-.bg-\[url\(\'\.\/img\/product\/header-slide\.jpg\'\)\]{
-  background-image: url('./img/product/header-slide.jpg');
+.bg-\[url\(\'\.\/img\/product\/photo\(15\)\.jpg\'\)\]{
+  background-image: url('./img/product/photo(15).jpg');
 }
 
 .bg-\[url\(\'\.\/img\/product\/photo\(1\)\.jpg\'\)\]{
@@ -847,16 +834,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./img/product/photo(14).jpg');
 }
 
-.bg-\[url\(\'\.\/img\/product\/photo\(15\)\.jpg\'\)\]{
-  background-image: url('./img/product/photo(15).jpg');
-}
-
 .bg-cover{
   background-size: cover;
 }
 
 .bg-fixed{
   background-attachment: fixed;
+}
+
+.bg-bottom{
+  background-position: bottom;
 }
 
 .bg-center{
@@ -924,10 +911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2.5rem;
 }
 
-.pb-24{
-  padding-bottom: 6rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -975,6 +958,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -1016,6 +1004,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1026,9 +1019,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.text-pink-300{
+.text-orange-300{
   --tw-text-opacity: 1;
-  color: rgb(249 168 212 / var(--tw-text-opacity));
+  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .text-gray-900{
@@ -1049,18 +1042,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-transparent{
-  color: transparent;
-}
-
-.text-opacity-50{
-  --tw-text-opacity: 0.5;
-}
-
-.text-opacity-10{
-  --tw-text-opacity: 0.1;
 }
 
 .text-opacity-90{
@@ -1086,8 +1067,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ct-top-menu-item{
   position: relative;
   cursor: pointer;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .ct-top-menu-item::after{
@@ -1106,12 +1089,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ct-top-menu-item:hover{
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .ct-top-menu-item:hover::after{
   content: var(--tw-content);
   width: 100%;
+}
+
+@media (min-width: 1024px){
+  .ct-top-menu-item{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
 }
 
 .ct-icon{
@@ -1132,8 +1124,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ct-top-menu-expanded{
   position: absolute;
   top: 5rem;
+  left: calc(-50vw + 50%);
   z-index: 10;
-  width: 100%;
+  width: 100vw;
 }
 
 @-webkit-keyframes slideDown{
@@ -1160,7 +1153,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-animation: slideDown .2s ease-in-out;
           animation: slideDown .2s ease-in-out;
   --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  background-color: rgb(6 95 70 / var(--tw-bg-opacity));
+  padding: 1.25rem;
   text-align: center;
 }
 
@@ -1209,14 +1203,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.9;
 }
 
-.hover\:text-pink-400:hover{
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity));
-}
-
 .hover\:text-orange-400:hover{
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.hover\:text-opacity-80:hover{
+  --tw-text-opacity: 0.8;
 }
 
 .hover\:transition-all:hover{
@@ -1277,11 +1270,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
-  .md\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .md\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1309,6 +1297,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
