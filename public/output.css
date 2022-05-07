@@ -494,26 +494,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.75rem;
 }
 
-.left-\[calc\]{
-  left: calc;
-}
-
-.left-\[calc\(\)\]{
-  left: calc();
-}
-
-.left-\[calc\(-50vw\)\]{
-  left: calc(-50vw);
-}
-
-.left-\[calc\(-50vw\+\)\]{
-  left: calc(-50vw + );
-}
-
-.left-\[calc\(-50vw\+50\)\]{
-  left: calc(-50vw + 50);
-}
-
 .left-\[calc\(-50vw\+50\%\)\]{
   left: calc(-50vw + 50%);
 }
@@ -624,16 +604,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 130px;
 }
 
-.h-\[340px\]{
-  height: 340px;
-}
-
-.h-\[0px\]{
-  height: 0px;
-}
-
-.h-\[40px\]{
-  height: 40px;
+.h-\[300px\]{
+  height: 300px;
 }
 
 .w-6{
@@ -823,44 +795,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./img/product/photo(11).jpg');
 }
 
-.bg-\[url\(\)\]{
-  background-image: url();
-}
-
-.bg-\[url\(\'\.\/img\/b\'\)\]{
-  background-image: url('./img/b');
-}
-
-.bg-\[url\(\'\.\/img\/\'\)\]{
-  background-image: url('./img/');
-}
-
-.bg-\[url\(\'\.\/img\/product\'\)\]{
-  background-image: url('./img/product');
-}
-
-.bg-\[url\(\'\.\/img\/product\/\'\)\]{
-  background-image: url('./img/product/');
-}
-
-.bg-\[url\(\'\.\/img\/product\/img\'\)\]{
-  background-image: url('./img/product/img');
-}
-
-.bg-\[url\(\'\.\/img\/product\/photo\(12\'\)\]{
-  background-image: url('./img/product/photo(12');
-}
-
-.bg-\[url\(\'\.\/img\/product\/photo\(12\)\'\)\]{
-  background-image: url('./img/product/photo(12)');
-}
-
-.bg-\[url\(\'\.\/img\/product\/photo\(12\)\.jpg\'\)\]{
-  background-image: url('./img/product/photo(12).jpg');
-}
-
 .bg-\[url\(\'\.\/img\/product\/photo\(13\)\.jpg\'\)\]{
   background-image: url('./img/product/photo(13).jpg');
+}
+
+.bg-\[url\(\'\.\/img\/product\/photo\(15\)\.jpg\'\)\]{
+  background-image: url('./img/product/photo(15).jpg');
+}
+
+.bg-\[url\(\'\.\/img\/product\/photo\(14\)\.jpg\'\)\]{
+  background-image: url('./img/product/photo(14).jpg');
 }
 
 .bg-cover{
@@ -995,6 +939,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-widest{
   letter-spacing: 0.1em;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 
 .text-gray-500{
@@ -1228,6 +1176,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:grid{
+    display: grid;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1268,14 +1220,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row{
-    flex-direction: row;
-  }
-
-  .lg\:flex-col{
-    flex-direction: column;
   }
 
   .lg\:justify-center{
